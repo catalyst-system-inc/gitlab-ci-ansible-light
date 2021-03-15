@@ -1,3 +1,3 @@
 # ansible-ansiblelint-filelint
 
-Ansible実行とfilelintを実行するためのコンテナ。
+Ansible、Ansible Lint、filelintを実行するためのコンテナ。

@@ -13,8 +13,12 @@ RUN apt update && \
 
 RUN /usr/bin/python3 -m pip install -U pip && \
     /usr/bin/python3 -m pip install setuptools && \
-    /usr/bin/python3 -m pip install ansible==3.0.0 \
-                                    ansible-lint==5.0.2
+    /usr/bin/python3 -m pip install ansible==4.0.0 \
+                                    ansible-lint==5.0.12
+
+# テスト用
+# RUN ansible --version
+# RUN ansible-lint --version
 
 # CIサーバーからsshの警告が出ないように設定を追加する
 ADD ansible.cfg /etc/ansible/ansible.cfg
